@@ -7,15 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		226F455D7F04A47036BE535F /* Pods_devmiituo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5135FFC9FDA1199505F36F03 /* Pods_devmiituo.framework */; };
+		84236EEE1E818EF5001C5EA4 /* help-circle-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84236EED1E818EF5001C5EA4 /* help-circle-2.png */; };
+		84236EF21E8190DA001C5EA4 /* DetallePolizaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84236EEF1E8190DA001C5EA4 /* DetallePolizaViewController.swift */; };
+		84236EF31E8190DA001C5EA4 /* PolizasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84236EF01E8190DA001C5EA4 /* PolizasTableViewCell.swift */; };
+		84236EF41E8190DA001C5EA4 /* PolizasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84236EF11E8190DA001C5EA4 /* PolizasViewController.swift */; };
+		8465F7B21E81860500CBB04B /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8465F7B11E81860500CBB04B /* UserNotifications.framework */; };
 		8482164F1E817D2300E38985 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482164E1E817D2300E38985 /* AppDelegate.swift */; };
 		848216511E817D2300E38985 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848216501E817D2300E38985 /* ViewController.swift */; };
 		848216541E817D2300E38985 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848216521E817D2300E38985 /* Main.storyboard */; };
 		848216571E817D2300E38985 /* devmiituo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 848216551E817D2300E38985 /* devmiituo.xcdatamodeld */; };
 		848216591E817D2300E38985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848216581E817D2300E38985 /* Assets.xcassets */; };
 		8482165C1E817D2300E38985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8482165A1E817D2300E38985 /* LaunchScreen.storyboard */; };
+		848216641E817D4700E38985 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 848216631E817D4700E38985 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CCC718A18BC4B5D76B89941 /* Pods-devmiituo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devmiituo.release.xcconfig"; path = "Pods/Target Support Files/Pods-devmiituo/Pods-devmiituo.release.xcconfig"; sourceTree = "<group>"; };
+		5135FFC9FDA1199505F36F03 /* Pods_devmiituo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_devmiituo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84236EED1E818EF5001C5EA4 /* help-circle-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help-circle-2.png"; sourceTree = "<group>"; };
+		84236EEF1E8190DA001C5EA4 /* DetallePolizaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetallePolizaViewController.swift; sourceTree = "<group>"; };
+		84236EF01E8190DA001C5EA4 /* PolizasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolizasTableViewCell.swift; sourceTree = "<group>"; };
+		84236EF11E8190DA001C5EA4 /* PolizasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolizasViewController.swift; sourceTree = "<group>"; };
+		8465F7B01E8184DD00CBB04B /* devmiituo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = devmiituo.entitlements; sourceTree = "<group>"; };
+		8465F7B11E81860500CBB04B /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		8482164B1E817D2300E38985 /* devmiituo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = devmiituo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8482164E1E817D2300E38985 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		848216501E817D2300E38985 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +39,8 @@
 		848216581E817D2300E38985 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8482165B1E817D2300E38985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8482165D1E817D2300E38985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848216631E817D4700E38985 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C32CC58675AF0F9DFA5B1B8F /* Pods-devmiituo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devmiituo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-devmiituo/Pods-devmiituo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +48,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8465F7B21E81860500CBB04B /* UserNotifications.framework in Frameworks */,
+				226F455D7F04A47036BE535F /* Pods_devmiituo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2253C11B3D4B9DC2246C7056 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8465F7B11E81860500CBB04B /* UserNotifications.framework */,
+				5135FFC9FDA1199505F36F03 /* Pods_devmiituo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		740C50565A20BBDB63EFD5B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C32CC58675AF0F9DFA5B1B8F /* Pods-devmiituo.debug.xcconfig */,
+				1CCC718A18BC4B5D76B89941 /* Pods-devmiituo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		848216421E817D2300E38985 = {
 			isa = PBXGroup;
 			children = (
 				8482164D1E817D2300E38985 /* devmiituo */,
 				8482164C1E817D2300E38985 /* Products */,
+				740C50565A20BBDB63EFD5B0 /* Pods */,
+				2253C11B3D4B9DC2246C7056 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +95,19 @@
 		8482164D1E817D2300E38985 /* devmiituo */ = {
 			isa = PBXGroup;
 			children = (
+				84236EED1E818EF5001C5EA4 /* help-circle-2.png */,
+				8465F7B01E8184DD00CBB04B /* devmiituo.entitlements */,
 				8482164E1E817D2300E38985 /* AppDelegate.swift */,
 				848216501E817D2300E38985 /* ViewController.swift */,
+				84236EEF1E8190DA001C5EA4 /* DetallePolizaViewController.swift */,
+				84236EF01E8190DA001C5EA4 /* PolizasTableViewCell.swift */,
+				84236EF11E8190DA001C5EA4 /* PolizasViewController.swift */,
 				848216521E817D2300E38985 /* Main.storyboard */,
 				848216581E817D2300E38985 /* Assets.xcassets */,
 				8482165A1E817D2300E38985 /* LaunchScreen.storyboard */,
 				8482165D1E817D2300E38985 /* Info.plist */,
 				848216551E817D2300E38985 /* devmiituo.xcdatamodeld */,
+				848216631E817D4700E38985 /* GoogleService-Info.plist */,
 			);
 			path = devmiituo;
 			sourceTree = "<group>";
@@ -74,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 848216601E817D2300E38985 /* Build configuration list for PBXNativeTarget "devmiituo" */;
 			buildPhases = (
+				4F954A0312FFDBCEC5620D8A /* [CP] Check Pods Manifest.lock */,
 				848216471E817D2300E38985 /* Sources */,
 				848216481E817D2300E38985 /* Frameworks */,
 				848216491E817D2300E38985 /* Resources */,
+				611D8B8CA28F5ACBDC7BCAD7 /* [CP] Embed Pods Frameworks */,
+				6D1522FBD0A9A6908B14AB13 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -101,6 +149,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = JZ4S35U8YF;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -128,6 +181,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8482165C1E817D2300E38985 /* LaunchScreen.storyboard in Resources */,
+				848216641E817D4700E38985 /* GoogleService-Info.plist in Resources */,
+				84236EEE1E818EF5001C5EA4 /* help-circle-2.png in Resources */,
 				848216591E817D2300E38985 /* Assets.xcassets in Resources */,
 				848216541E817D2300E38985 /* Main.storyboard in Resources */,
 			);
@@ -135,14 +190,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F954A0312FFDBCEC5620D8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		611D8B8CA28F5ACBDC7BCAD7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-devmiituo/Pods-devmiituo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D1522FBD0A9A6908B14AB13 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-devmiituo/Pods-devmiituo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		848216471E817D2300E38985 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84236EF31E8190DA001C5EA4 /* PolizasTableViewCell.swift in Sources */,
 				848216571E817D2300E38985 /* devmiituo.xcdatamodeld in Sources */,
 				848216511E817D2300E38985 /* ViewController.swift in Sources */,
+				84236EF41E8190DA001C5EA4 /* PolizasViewController.swift in Sources */,
 				8482164F1E817D2300E38985 /* AppDelegate.swift in Sources */,
+				84236EF21E8190DA001C5EA4 /* DetallePolizaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,7 +295,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: JOHN CRIS (M8Y5J635GH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: JOHN CRIS (M8Y5J635GH)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -261,21 +368,30 @@
 		};
 		848216611E817D2300E38985 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C32CC58675AF0F9DFA5B1B8F /* Pods-devmiituo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = devmiituo/devmiituo.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: JOHN CRIS (M8Y5J635GH)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = JZ4S35U8YF;
 				INFOPLIST_FILE = devmiituo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.miituo.devmiituo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		848216621E817D2300E38985 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CCC718A18BC4B5D76B89941 /* Pods-devmiituo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = devmiituo/devmiituo.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = JZ4S35U8YF;
 				INFOPLIST_FILE = devmiituo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -304,6 +420,7 @@
 				848216621E817D2300E38985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

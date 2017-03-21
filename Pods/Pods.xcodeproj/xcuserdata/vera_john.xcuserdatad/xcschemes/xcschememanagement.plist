@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>GoogleToolboxForMac.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-devmiituo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Protobuf.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Toaster.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>3CD677C3182AF135A890120381BB83E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E44A1887C20A6247C15C30FC75A881E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A39AE9B86CF2AEB697C25DF98BAFEBF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B57D5B957C14C41601A3047095BD99B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
