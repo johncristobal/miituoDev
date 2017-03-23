@@ -34,9 +34,6 @@ class ViewController: UIViewController {
             //get data from WS
             self.getJson(telefon: tel);
 
-            //launch second view with data - show table and polizas
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "polizas") as! PolizasViewController
-            self.present(vc, animated: true, completion: nil)
 
         }else{
             //print("Introduzca número celular")
@@ -286,6 +283,10 @@ class ViewController: UIViewController {
         }
         
         loadTask.resume()
+        
+        //launch second view with data - show table and polizas
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "polizas") as! PolizasViewController
+        self.present(vc, animated: true, completion: nil)
     }
 
 }

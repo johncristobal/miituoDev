@@ -11,8 +11,9 @@ import CoreData
 
 var valueToPass = ""
 
-var arreglo = [String:String]()
-var arregloPolizas = [String:String]()
+var arreglo = [[String:String]]()
+var arregloPolizas = [[String:String]]()
+var arreglocarro = [[String:String]]()
 
 class PolizasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -20,23 +21,29 @@ class PolizasViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        do {
-            
+        
+        arreglo = [[String:String]]()
+        arregloPolizas = [[String:String]]()
+        
+        do {            
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
             let context = appDelegate.persistentContainer.viewContext
 
             //request for  tables
             let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
             let requestpoli = NSFetchRequest<NSFetchRequestResult>(entityName: "Polizas")
+            let requestcarro = NSFetchRequest<NSFetchRequestResult>(entityName: "Vehiculos")
             //let results = context.fetch(request)
             request.returnsObjectsAsFaults = false
             requestpoli.returnsObjectsAsFaults = false
+            requestcarro.returnsObjectsAsFaults = false
 
             let results = try context.fetch(request)
             let resultpolizas = try context.fetch(requestpoli)
+            let resultcarros = try context.fetch(requestcarro)
             
             //get data from users
+            var i = 0;
             if results.count > 0 {
                 
                 for result in results as! [NSManagedObject] {
@@ -44,17 +51,20 @@ class PolizasViewController: UIViewController, UITableViewDelegate, UITableViewD
                     if let username = result.value(forKey: "name") as? String {
                         
                         print(username)
-                        arreglo["name"] = username
+                        var tempdict = [String:String]()
+                        tempdict["name"] = username
                         //arreglo.setValue(username, forKey: "name")
                         //print(result.value(forKey: "lastname") as? String)
-                        arreglo["lastname"] = result.value(forKey: "lastname") as? String
-                        arreglo["mothername"] = result.value(forKey: "lastname") as? String
-                        arreglo["token"] = result.value(forKey: "token") as? String
-                        arreglo["celphone"] = result.value(forKey: "celphone") as? String
-                        arreglo["id"] = result.value(forKey: "id") as? String
+                        tempdict["lastname"] = result.value(forKey: "lastname") as? String
+                        tempdict["mothername"] = result.value(forKey: "lastname") as? String
+                        tempdict["token"] = result.value(forKey: "token") as? String
+                        tempdict["celphone"] = result.value(forKey: "celphone") as? String
+                        tempdict["id"] = result.value(forKey: "id") as? String
+                        
+                        arreglo.append(tempdict)
                         //print(result.value(forKey: "mothername") as? String)
                         //print(result.value(forKey: "id") as? Int)
-                        
+                        i += 1
                     }
                 }
             } else {
@@ -64,6 +74,7 @@ class PolizasViewController: UIViewController, UITableViewDelegate, UITableViewD
             }
             
             //get data fro polizas
+            var y = 0
             if resultpolizas.count > 0 {
                 
                 for result in resultpolizas as! [NSManagedObject] {
@@ -71,12 +82,46 @@ class PolizasViewController: UIViewController, UITableViewDelegate, UITableViewD
                     if let polizanumber = result.value(forKey: "nopoliza") as? String {
                         
                         print(polizanumber)
-                        arregloPolizas["nopoliza"] = polizanumber
-                        arregloPolizas["insurance"] = result.value(forKey: "insurance") as? String
-                        arregloPolizas["lastodometer"] = result.value(forKey: "lastodometer") as? String
-                        arregloPolizas["odometerpie"] = result.value(forKey: "odometerpie") as? String
-                        arregloPolizas["rate"] = result.value(forKey: "rate") as? String
-                        arregloPolizas["vehiclepie"] = result.value(forKey: "vehiclepie") as? String
+                        var tempdict2 = [String:String]()
+                        tempdict2["nopoliza"] = polizanumber
+                        tempdict2["insurance"] = result.value(forKey: "insurance") as? String
+                        tempdict2["lastodometer"] = result.value(forKey: "lastodometer") as? String
+                        tempdict2["odometerpie"] = result.value(forKey: "odometerpie") as? String
+                        tempdict2["rate"] = result.value(forKey: "rate") as? String
+                        tempdict2["vehiclepie"] = result.value(forKey: "vehiclepie") as? String
+                        
+                        arregloPolizas.append(tempdict2)
+                        y += 1
+                    }
+                }
+            } else {
+                
+                print("No results")
+                
+            }
+            
+            //arreglos carros-----------
+            if resultcarros.count > 0 {
+                
+                for result in resultcarros as! [NSManagedObject] {
+                    
+                    if let polizasid = result.value(forKey: "idpolizas") as? String {
+                        
+                        print(polizasid)
+                        var tempdict3 = [String:String]()
+                        tempdict3["idpolizas"] = polizasid
+                        tempdict3["capacidad"] = result.value(forKey: "capacidad") as? String
+                        tempdict3["color"] = result.value(forKey: "color") as? String
+                        tempdict3["brand"] = result.value(forKey: "brand") as? String
+                        tempdict3["descripcion"] = result.value(forKey: "descripcion") as? String
+                        tempdict3["idcarro"] = result.value(forKey: "idcarro") as? String
+                        tempdict3["model"] = result.value(forKey: "model") as? String
+                        tempdict3["plates"] = result.value(forKey: "plates") as? String
+                        tempdict3["subtype"] = result.value(forKey: "subtype") as? String
+                        tempdict3["type"] = result.value(forKey: "type") as? String
+                        
+                        arreglocarro.append(tempdict3)
+                        y += 1
                     }
                 }
             } else {
@@ -104,6 +149,7 @@ class PolizasViewController: UIViewController, UITableViewDelegate, UITableViewD
     {
         //Return the number of rows in our table
         //return 15;
+        print(arregloPolizas.count)
         return arregloPolizas.count
     }
     
@@ -114,9 +160,9 @@ class PolizasViewController: UIViewController, UITableViewDelegate, UITableViewD
         //Define el contenido de la celda
         //let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "Cell")
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PolizasTableViewCell
-        
+        print("Valor fila: \(indexPath.row)")
         //cell.label.text = String(indexPath.row+1)
-        cell.label.text = "Polizas: \(arregloPolizas["nopoliza"]! as String)"
+        cell.label.text = "Polizas: \(arregloPolizas[indexPath.row]["nopoliza"]! as String)"
         
         //using a array to set the data
         //cell.textLabel?.text = self.content[indexPath.row]
@@ -125,19 +171,20 @@ class PolizasViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
         // Get Cell Label
         let indexPath = tableView.indexPathForSelectedRow!
         let currentCell = tableView.cellForRow(at: indexPath)! as! PolizasTableViewCell
         
-        valueToPass = currentCell.label.text!
-        //valueToPass = indexPath.row
+        //valueToPass = currentCell.label.text!
+        valueToPass = String(describing:indexPath.row)
         print(valueToPass)
         //var viewController = segue.destination as! DetallePolizaViewController
         //viewController.identificador = (selectedIndex?.row)!
         
-        //let vc = self.storyboard?.instantiateViewController(withIdentifier: "detailID") as! DetallePolizaViewController
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "detallePoli") as! DetallePolizaViewController
         //vc.cadenas = valueToPass
-        //self.present(vc, animated: true, completion: nil)
+        self.present(vc, animated: true, completion: nil)
 
         //performSegue(withIdentifier: "seguewithid", sender: self)
     }

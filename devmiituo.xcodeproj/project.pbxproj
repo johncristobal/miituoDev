@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		226F455D7F04A47036BE535F /* Pods_devmiituo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5135FFC9FDA1199505F36F03 /* Pods_devmiituo.framework */; };
+		8416F7A41E8340A7003999D1 /* derecho.png in Resources */ = {isa = PBXBuildFile; fileRef = 8416F79F1E8340A6003999D1 /* derecho.png */; };
+		8416F7A51E8340A7003999D1 /* frontal.png in Resources */ = {isa = PBXBuildFile; fileRef = 8416F7A01E8340A6003999D1 /* frontal.png */; };
+		8416F7A61E8340A7003999D1 /* izquierdo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8416F7A11E8340A6003999D1 /* izquierdo.png */; };
+		8416F7A71E8340A7003999D1 /* odometer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8416F7A21E8340A6003999D1 /* odometer.jpg */; };
+		8416F7A81E8340A7003999D1 /* trasero.png in Resources */ = {isa = PBXBuildFile; fileRef = 8416F7A31E8340A7003999D1 /* trasero.png */; };
+		8416F7AB1E8345BA003999D1 /* PhotosCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8416F7AA1E8345BA003999D1 /* PhotosCarViewController.swift */; };
 		84236EEE1E818EF5001C5EA4 /* help-circle-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84236EED1E818EF5001C5EA4 /* help-circle-2.png */; };
 		84236EF21E8190DA001C5EA4 /* DetallePolizaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84236EEF1E8190DA001C5EA4 /* DetallePolizaViewController.swift */; };
 		84236EF31E8190DA001C5EA4 /* PolizasTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84236EF01E8190DA001C5EA4 /* PolizasTableViewCell.swift */; };
@@ -25,6 +31,12 @@
 /* Begin PBXFileReference section */
 		1CCC718A18BC4B5D76B89941 /* Pods-devmiituo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devmiituo.release.xcconfig"; path = "Pods/Target Support Files/Pods-devmiituo/Pods-devmiituo.release.xcconfig"; sourceTree = "<group>"; };
 		5135FFC9FDA1199505F36F03 /* Pods_devmiituo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_devmiituo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8416F79F1E8340A6003999D1 /* derecho.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = derecho.png; sourceTree = "<group>"; };
+		8416F7A01E8340A6003999D1 /* frontal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frontal.png; sourceTree = "<group>"; };
+		8416F7A11E8340A6003999D1 /* izquierdo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = izquierdo.png; sourceTree = "<group>"; };
+		8416F7A21E8340A6003999D1 /* odometer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = odometer.jpg; sourceTree = "<group>"; };
+		8416F7A31E8340A7003999D1 /* trasero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trasero.png; sourceTree = "<group>"; };
+		8416F7AA1E8345BA003999D1 /* PhotosCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCarViewController.swift; sourceTree = "<group>"; };
 		84236EED1E818EF5001C5EA4 /* help-circle-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help-circle-2.png"; sourceTree = "<group>"; };
 		84236EEF1E8190DA001C5EA4 /* DetallePolizaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetallePolizaViewController.swift; sourceTree = "<group>"; };
 		84236EF01E8190DA001C5EA4 /* PolizasTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolizasTableViewCell.swift; sourceTree = "<group>"; };
@@ -74,6 +86,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8416F7A91E8340AC003999D1 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				8416F79F1E8340A6003999D1 /* derecho.png */,
+				8416F7A01E8340A6003999D1 /* frontal.png */,
+				8416F7A11E8340A6003999D1 /* izquierdo.png */,
+				8416F7A21E8340A6003999D1 /* odometer.jpg */,
+				8416F7A31E8340A7003999D1 /* trasero.png */,
+				84236EED1E818EF5001C5EA4 /* help-circle-2.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		848216421E817D2300E38985 = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +120,7 @@
 		8482164D1E817D2300E38985 /* devmiituo */ = {
 			isa = PBXGroup;
 			children = (
-				84236EED1E818EF5001C5EA4 /* help-circle-2.png */,
+				8416F7A91E8340AC003999D1 /* images */,
 				8465F7B01E8184DD00CBB04B /* devmiituo.entitlements */,
 				8482164E1E817D2300E38985 /* AppDelegate.swift */,
 				848216501E817D2300E38985 /* ViewController.swift */,
@@ -103,6 +128,7 @@
 				84236EF01E8190DA001C5EA4 /* PolizasTableViewCell.swift */,
 				84236EF11E8190DA001C5EA4 /* PolizasViewController.swift */,
 				848216521E817D2300E38985 /* Main.storyboard */,
+				8416F7AA1E8345BA003999D1 /* PhotosCarViewController.swift */,
 				848216581E817D2300E38985 /* Assets.xcassets */,
 				8482165A1E817D2300E38985 /* LaunchScreen.storyboard */,
 				8482165D1E817D2300E38985 /* Info.plist */,
@@ -180,10 +206,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8416F7A71E8340A7003999D1 /* odometer.jpg in Resources */,
+				8416F7A51E8340A7003999D1 /* frontal.png in Resources */,
 				8482165C1E817D2300E38985 /* LaunchScreen.storyboard in Resources */,
 				848216641E817D4700E38985 /* GoogleService-Info.plist in Resources */,
+				8416F7A41E8340A7003999D1 /* derecho.png in Resources */,
+				8416F7A61E8340A7003999D1 /* izquierdo.png in Resources */,
 				84236EEE1E818EF5001C5EA4 /* help-circle-2.png in Resources */,
 				848216591E817D2300E38985 /* Assets.xcassets in Resources */,
+				8416F7A81E8340A7003999D1 /* trasero.png in Resources */,
 				848216541E817D2300E38985 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,6 +278,7 @@
 				848216571E817D2300E38985 /* devmiituo.xcdatamodeld in Sources */,
 				848216511E817D2300E38985 /* ViewController.swift in Sources */,
 				84236EF41E8190DA001C5EA4 /* PolizasViewController.swift in Sources */,
+				8416F7AB1E8345BA003999D1 /* PhotosCarViewController.swift in Sources */,
 				8482164F1E817D2300E38985 /* AppDelegate.swift in Sources */,
 				84236EF21E8190DA001C5EA4 /* DetallePolizaViewController.swift in Sources */,
 			);

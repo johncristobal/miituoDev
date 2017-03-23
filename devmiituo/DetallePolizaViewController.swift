@@ -12,14 +12,23 @@ class DetallePolizaViewController: UIViewController {
 
     //var idPoliza:String = "prueba"
     
-    @IBOutlet var labelInfo: UILabel!
+    @IBOutlet var placas: UILabel!
+    @IBOutlet var nombre: UILabel!
+    
+    @IBOutlet var modelo: UILabel!
+    //@IBOutlet var placas: UILabel!
+    
+    //@IBOutlet var labelInfo: UILabel!
+    
     var identificador:Int = 0
     var cadenas:String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        labelInfo.text = valueToPass
+        nombre.text = arreglo[Int(valueToPass)!]["name"]
+        placas.text = arreglocarro[Int(valueToPass)!]["plates"]
+        modelo.text = arreglocarro[Int(valueToPass)!]["model"]
 
         // Do any additional setup after loading the view.
     }
