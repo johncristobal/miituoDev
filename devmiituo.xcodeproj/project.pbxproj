@@ -26,6 +26,7 @@
 		848216591E817D2300E38985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848216581E817D2300E38985 /* Assets.xcassets */; };
 		8482165C1E817D2300E38985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8482165A1E817D2300E38985 /* LaunchScreen.storyboard */; };
 		848216641E817D4700E38985 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 848216631E817D4700E38985 /* GoogleService-Info.plist */; };
+		84D058D31E896DFB00C72BF9 /* OdometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D058D21E896DFB00C72BF9 /* OdometerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		8482165B1E817D2300E38985 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8482165D1E817D2300E38985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		848216631E817D4700E38985 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84D058D21E896DFB00C72BF9 /* OdometerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OdometerViewController.swift; sourceTree = "<group>"; };
 		C32CC58675AF0F9DFA5B1B8F /* Pods-devmiituo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-devmiituo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-devmiituo/Pods-devmiituo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +130,7 @@
 				84236EF01E8190DA001C5EA4 /* PolizasTableViewCell.swift */,
 				84236EF11E8190DA001C5EA4 /* PolizasViewController.swift */,
 				848216521E817D2300E38985 /* Main.storyboard */,
+				84D058D21E896DFB00C72BF9 /* OdometerViewController.swift */,
 				8416F7AA1E8345BA003999D1 /* PhotosCarViewController.swift */,
 				848216581E817D2300E38985 /* Assets.xcassets */,
 				8482165A1E817D2300E38985 /* LaunchScreen.storyboard */,
@@ -279,6 +282,7 @@
 				848216511E817D2300E38985 /* ViewController.swift in Sources */,
 				84236EF41E8190DA001C5EA4 /* PolizasViewController.swift in Sources */,
 				8416F7AB1E8345BA003999D1 /* PhotosCarViewController.swift in Sources */,
+				84D058D31E896DFB00C72BF9 /* OdometerViewController.swift in Sources */,
 				8482164F1E817D2300E38985 /* AppDelegate.swift in Sources */,
 				84236EF21E8190DA001C5EA4 /* DetallePolizaViewController.swift in Sources */,
 			);
